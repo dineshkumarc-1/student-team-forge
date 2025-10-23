@@ -3,15 +3,6 @@ import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Users, Clock } from "lucide-react";
 
-interface ProjectCardProps {
-  title: string;
-  description: string;
-  skills: string[];
-  teamSize: number;
-  duration: string;
-  onClick?: () => void;
-}
-
 export const ProjectCard = ({
   title,
   description,
@@ -19,7 +10,7 @@ export const ProjectCard = ({
   teamSize,
   duration,
   onClick,
-}: ProjectCardProps) => {
+}) => {
   return (
     <Card className="p-6 shadow-soft hover:shadow-medium transition-all duration-300 hover:-translate-y-1 cursor-pointer group">
       <div onClick={onClick}>

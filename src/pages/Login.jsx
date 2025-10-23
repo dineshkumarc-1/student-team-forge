@@ -7,7 +7,7 @@ import { Card } from "@/components/ui/card";
 const Login = () => {
   const navigate = useNavigate();
 
-  const handleLogin = (e: React.FormEvent) => {
+  const handleLogin = (e) => {
     e.preventDefault();
     navigate("/dashboard");
   };

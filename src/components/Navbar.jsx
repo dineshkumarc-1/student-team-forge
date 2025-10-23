@@ -5,7 +5,7 @@ import { cn } from "@/lib/utils";
 
 export const Navbar = () => {
   const location = useLocation();
-  const isActive = (path: string) => location.pathname === path;
+  const isActive = (path) => location.pathname === path;
 
   const navItems = [
     { path: "/dashboard", icon: Home, label: "Home" },
